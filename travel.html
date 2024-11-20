@@ -8,6 +8,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
+        <!-- Header -->
         <div class="bg-blue-700 h-16 w-full flex justify-between">
             <div class="p-3 pl-5 w-full text-white font-bold text-2xl">
                 Travel Explorer
@@ -19,19 +20,21 @@
                     <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Content</div>
             </div>
         </div>
-        <!-- Background photo -->
+
+        <!-- Main Background photo -->
         <div class="bg-cover bg-center h-[500px] text-center font-semibold text-white " style="background-image: url('sea.jpg');">
-            <div class="bg-black h-full bg-opacity-50 flex flex-col justify-center items-center font-semibold">
-                <p class="text-7xl">Discover Your Next Adventure</p>
-                <p class="text-3xl font-light">Plan Your Dream Vacation With Us</p><br>
-                <button class="bg-white text-blue-700 rounded-3xl p-2 px-5">Explore now</button>
+            <div class="bg-black h-full w-full bg-opacity-50 flex flex-col justify-center items-center font-bold">
+                <p class="text-7xl font-bold pb-5 tracking-wider">Discover Your Next Adventure</p>
+                <p class="text-3xl font-light pb-5 tracking-wider">Plan Your Dream Vacation With Us</p>
+                <button class="bg-white text-blue-700 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition duration-300 py-3 px-8 mt-5 text-2xl"><a href="#popular_destination">Explore Now</a></button>
             </div>
         </div>
+
         <!-- Popular Destination -->
-        <div class="p-10 py-12 text-center font-bold text-4xl">
+        <div id="popular_destination" class="p-10 py-12 text-center font-bold text-4xl">
             Popular Destination<br><br>
             <div class="p-2 flex space-x-10">
-                <div class="h-auto w-1/2 bg-slate-100 rounded-xl border border-transparent">
+                <div class="h-auto w-1/2 rounded-xl border border-transparent shadow-md  pb-20 text-opacity-40">
                     <img src="sea.jpg" alt="sea" class="h-[300] w-full rounded-t-xl rounded-b-none">
                     <p class="text-left font-bold text-3xl p-5">
                         Tropical Beaches
@@ -40,7 +43,7 @@
                         Relax on white sands and enjoy crystal-clear waters
                     </p>
                 </div>
-                <div class="h-auto w-1/2 bg-slate-100 rounded-xl border border-transparent">
+                <div class="h-auto w-1/2 rounded-xl border border-transparent shadow-md pb-20">
                     <img src="mountain.jpg" alt="mountain" class="h-[300] w-full rounded-t-xl rounded-b-none">
                     <p class="text-left font-bold text-3xl p-5">
                         Mountain
@@ -51,7 +54,19 @@
                 </div>
             </div>
         </div>
-        </br></br></br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut minus amet. Aperiam possimus adipisci perspiciatis ad nulla pariatur veritatis, impedit laborum similique expedita doloribus cumque quisquam provident sequi id!</p>
+
+        <!-- Pricing table -->
+        <div class="bg-slate-100 p-3 pt-10 px-5 text-center">
+            <p class="font-bold text-5xl p-5 pb-10">Pricing Plans</p>
+            <div class="px-20 border-collapse border rounded-lg">
+                <table class="table-auto w-full p-10 px-20 border-collapse border rounded-lg">
+                    <tr class="bg-blue-700 text-white">
+                        <th class="w-1/4">Package</th>
+                        <th class="w-1/2">Features</th>
+                        <th class="w-1/4">Price</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
