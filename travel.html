@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency</title>
-    <link rel="stylesheet" href="travel.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="bg-blue-700 h-16 w-full flex justify-between">
-        <div class="p-3 pl-5 w-full text-white font-bold text-2xl">
-            Travel Explorer
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency</title>
+        <link rel="stylesheet" href="travel.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="bg-blue-700 h-16 w-full flex justify-between">
+            <div class="p-3 pl-5 w-full text-white font-bold text-2xl">
+                Travel Explorer
+            </div>
+            <div class="p-4 pr-5 flex space-x-4 text-white">
+                    <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Home</div>
+                    <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Destination</div>
+                    <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Pricing</div>
+                    <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Content</div>
+            </div>
         </div>
-        <div class="p-4 pr-5 flex space-x-4 text-white">
-                <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Home</div>
-                <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Destination</div>
-                <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Pricing</div>
-                <div class="hover:scale-110 hover:text-black hover:cursor-pointer">Content</div>
+        <!-- Background photo -->
+        <div class="bg-cover bg-center h-[500px] text-center font-semibold text-white " style="background-image: url('sea.jpg');">
+            <div class="bg-black h-full bg-opacity-50 flex flex-col justify-center items-center font-semibold">
+                <p class="text-7xl">Discover Your Next Adventure</p>
+                <p class="text-3xl font-light">Plan Your Dream Vacation With Us</p><br>
+                <button class="bg-white text-blue-700 rounded-3xl p-2 px-5">Explore now</button>
+            </div>
         </div>
-    </div>
-    <div class="bg-cover bg-center h-[500px] text-center font-semibold text-white " style="background-image: url('sea.jpeg');">
-        <div class="bg-black h-full bg-opacity-50 flex flex-col justify-center items-center font-semibold">
-            <h1 class="text-white text-4xl">Discover the World</h1>
-            <h6>Plan Your Dream Vacation With Us</h4>
+        <!-- Popular Destination -->
+        <div class="p-10 py-12 text-center font-bold text-4xl">
+            Popular Destination<br><br>
+            <div class="p-2 flex space-x-10">
+                <div class="h-auto w-1/2 bg-slate-100 rounded-xl border border-transparent">
+                    <img src="sea.jpg" alt="sea" class="h-[300] w-full rounded-t-xl rounded-b-none">
+                    <p class="text-left font-bold text-3xl p-5">
+                        Tropical Beaches
+                    </p>
+                    <p class="text-left font-[350] text-2xl px-5">
+                        Relax on white sands and enjoy crystal-clear waters
+                    </p>
+                </div>
+                <div class="h-auto w-1/2 bg-slate-100 rounded-xl border border-transparent">
+                    <img src="mountain.jpg" alt="mountain" class="h-[300] w-full rounded-t-xl rounded-b-none">
+                    <p class="text-left font-bold text-3xl p-5">
+                        Mountain
+                    </p>
+                    <p class="text-left font-[350] text-2xl px-5">
+                        Explore and create adventure.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+        </br></br></br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut minus amet. Aperiam possimus adipisci perspiciatis ad nulla pariatur veritatis, impedit laborum similique expedita doloribus cumque quisquam provident sequi id!</p>
+    </body>
 </html>
