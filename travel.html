@@ -14,10 +14,10 @@
                 Travel Explorer
             </div>
             <div class="p-4 pr-5 flex space-x-4 text-white">
-                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer">Home</a>
-                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer">Destination</a>
-                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer">Pricing</a>
-                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer">Content</a>
+                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer transition duration-300">Home</a>
+                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer transition duration-300">Destination</a>
+                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer transition duration-300">Pricing</a>
+                    <a href="#" class="hover:scale-110 hover:text-black hover:cursor-pointer transition duration-300">Content</a>
             </div>
         </div>
 
@@ -32,41 +32,75 @@
 
         <!-- Popular Destination -->
         <div id="popular_destination" class="p-10 py-12 text-center font-bold text-4xl">
-            Popular Destination<br><br>
-            <div class="p-2 flex space-x-10">
-                <div class="h-auto w-1/2 rounded-xl border border-transparent shadow-md  pb-20 text-opacity-40">
+            <p class="pb-14">Popular Destination</p>
+            <div class="p-10 flex space-x-10 h-100 w-100">
+                <div class="relative h-auto w-1/2 rounded-xl border border-transparent shadow-lg  pb-20 hover:scale-105 transition duration-500 cursor-pointer">
                     <img src="sea.jpg" alt="sea" class="h-[300] w-full rounded-t-xl rounded-b-none">
-                    <p class="text-left font-bold text-3xl p-5">
-                        Tropical Beaches
-                    </p>
-                    <p class="text-left font-[350] text-2xl px-5">
-                        Relax on white sands and enjoy crystal-clear waters
-                    </p>
+                    <p class="text-left font-bold text-3xl p-5">Tropical Beaches</p>
+                    <p class="text-left font-[350] text-2xl px-5">Relax on white sands and enjoy crystal-clear waters</p>
                 </div>
-                <div class="h-auto w-1/2 rounded-xl border border-transparent shadow-md pb-20">
+                <div class="relative h-auto w-1/2 rounded-xl border border-transparent shadow-lg pb-16 hover:scale-105 transition duration-500 cursor-pointer">
                     <img src="mountain.jpg" alt="mountain" class="h-[300] w-full rounded-t-xl rounded-b-none">
-                    <p class="text-left font-bold text-3xl p-5">
-                        Mountain
-                    </p>
-                    <p class="text-left font-[350] text-2xl px-5">
-                        Explore and create adventure.
-                    </p>
+                    <p class="text-left font-bold text-3xl p-5">Mountain</p>
+                    <p class="text-left font-[350] text-2xl px-5">Explore and create adventure.</p>
+                </div>
+                <div class="relative h-auto w-1/2 rounded-xl border border-transparent shadow-lg  pb-20 hover:scale-105 transition duration-500 cursor-pointer">
+                    <img src="sea.jpg" alt="sea" class="h-[300] w-full rounded-t-xl rounded-b-none">
+                    <p class="text-left font-bold text-3xl p-5">Tropical Beaches</p>
+                    <p class="text-left font-[350] text-2xl px-5">Relax on white sands and enjoy crystal-clear waters</p>
                 </div>
             </div>
         </div>
 
         <!-- Pricing table -->
-        <div class="bg-slate-100 p-3 pt-10 px-5 text-center">
-            <p class="font-bold text-5xl p-5 pb-10">Pricing Plans</p>
-            <div class="px-20 border-collapse border rounded-lg">
-                <table class="table-auto w-full p-10 px-20 border-collapse border rounded-lg">
-                    <tr class="bg-blue-700 text-white">
-                        <th class="w-1/4">Package</th>
-                        <th class="w-1/2">Features</th>
-                        <th class="w-1/4">Price</th>
+        <div class="bg-slate-100 p-3 pt-10 px-5 pb-16">
+            <p class="font-bold text-4xl pb-10 text-center">Pricing Plans</p>
+            <div class="px-20 border-collapse">
+                <table class="w-full text-xl shadow-lg rounded-2xl m-3">
+                    <tr class="bg-blue-700 text-white text-center">
+                        <th class="w-1/4 rounded-tl-2xl p-4">Package</th>
+                        <th class="w-1/2 p-4">Features</th>
+                        <th class="w-1/4 p-4 rounded-tr-2xl">Price</th>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b text-center">Standard</td>
+                        <td class="py-2 px-4 pl-20 border-b">
+                            <ul class="list-disc">
+                                <li>3 Nights Accommodation</li>
+                                <li>City Tour</li>
+                            </ul>
+                        </td>
+                        <td class="py-2 px-4 border-b text-center">$499</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 text-center">Deluxe</td>
+                        <td class="py-2 px-4 pl-20">
+                            <ul class="list-disc">
+                                <li>5 Nights Accommodation</li>
+                                <li>All Meals Included</li>
+                                <li>Private Guide</li>
+                            </ul>
+                        </td>
+                        <td class="py-2 px-4 text-center">$999</td>
                     </tr>
                 </table>
             </div>
         </div>
+
+        <!-- Last part -->
+        <div class="text-center pt-20 pb-20">
+            <p class="text-4xl font-bold p-2">
+                Contact Us
+            </p>
+            <p class="text-2xl p-2">
+                We would love to hear from you!
+            </p>
+            <a href="mailto:info@travelexplorer.com" class="text-xl p-1 text-blue-600 hover:scale-150 transition-transform duration-500">
+                <u class="hover:text-black">info@travelexplorer.com</u>
+            </a>                       
+        </div>
     </body>
+    <footer class="bg-slate-900 text-center text-white text-xl p-4">
+        &copy; 2024 Travel Explorer. All rights reserved.
+    </footer>
 </html>
