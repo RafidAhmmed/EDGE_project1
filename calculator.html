@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <table class="border border-gray-400 w-1/4 h-2/3 border-separate border-spacing-4 bg-green-200">
+            <tr>
+            <td colspan="4" class="border border-gray-200 p-2 text-center bg-gray-200">
+                    <input type="text" id="display" class="w-full h-full text-right" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('7')">7</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('8')">8</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('9')">9</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="setOperation('/')">/</button></td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('4')">4</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('5')">5</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('6')">6</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="setOperation('*')">*</button></td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('1')">1</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('2')">2</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('3')">3</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="setOperation('-')">-</button></td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('0')">0</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="appendNumber('.')">.</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="calculate()">=</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="setOperation('+')">+</button></td>
+            </tr>
+            <tr>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="modul()">%</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="power()">^</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="del()">D</button></td>
+                <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full bg-red-600" onclick="clearDisplay()">C</button></td>
+                <!-- <td class="border border-gray-400 text-center bg-gray-100"><button class="w-full h-full" onclick="percentage()">%</button></td> -->
+            </tr>
+        </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
